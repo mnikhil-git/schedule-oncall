@@ -1,4 +1,4 @@
-# $Id: test-sched-override 1.2 Thu, 18 Jul 2002 10:34:53 -0400 trockij $
+# $Id: test-sched-override 1.3 Tue, 03 Sep 2002 12:06:38 -0400 trockij $
 
 #
 # Put people's usernames, real names, and
@@ -36,7 +36,7 @@ begin person gwb
     email gwb@x_yyz.com
 end person
 
-override = 3-jul-2002 through 5-jul-2002
+#override = 3-jul-2002 through 5-jul-2002
 
      ,    Monday,   Tuesday, Wednesday, Thursday,     Friday,  Saturday,    Sunday
 

@@ -1,0 +1,7 @@
+0.8.2 -> 0.8.3
+Tue Sep  3 12:06:47 EDT 2002 trockij
+--------------
+    -added real tests in test.pl to make PAUSE happy
+    -added MANIFEST
+    -updated README
+

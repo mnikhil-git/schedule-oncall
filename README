@@ -1,11 +1,25 @@
-$Id: README 1.3 Thu, 18 Jul 2002 10:30:38 -0400 trockij $
+$ProjectVersion: schedule-oncall-0-8-3.4 $
+$ProjectDate: Tue, 03 Sep 2002 12:21:28 -0400 $
+
+Schedule::Oncall is a Perl  module which provides methods to manipulate a
+rotational on-call schedule.  One or more tables of schedules can be
+maintained, loaded, and searched.  An on-call table is composed of seven days,
+where each day has a list of minute ranges which correspond to a particular
+person.
 
 To install:
 
-Install the Date::Manip module from http://www.perl.com/CPAN/
+First install the Date::Manip module from http://www.perl.com/CPAN/
 
 perl Makefile.PL
 make
+make install
+
+Then install this module:
+
+perl Makefile.PL
+make
+make test
 make install
 
 See the pod pages for Schedule::Oncall
@@ -16,3 +30,12 @@ send email, etc.
 
 More documentation will be added at a later, since this is only the initial
 release.
+
+This module can be found in CPAN, or here:
+
+http://www.kernel.org/software/schedule-oncall/
+http://www.perl.com/CPAN/modules/by-module/Schedule/
+
+Jim Trocki
+trockij@linux.kernel.org
+trockij@arctic.org

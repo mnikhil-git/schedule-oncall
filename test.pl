@@ -1,20 +1,70 @@
-exit;
+use strict;
+use Test;
+
+BEGIN { plan tests => 6 }
 
 use Schedule::Oncall;
 
-use strict;
-
 my $s = new Schedule::Oncall;
 
-if (!defined $s->load ("file" =>  "test-sched"))
+#
+# test 1
+#
+if (defined $s)
 {
-    die "failed: " . $s->{"error"} . "\n";
+    ok (1);
 }
 
+else
+{
+    ok (0, 1, "create instance of Schedule::Oncall")
+}
+
+
+#
+# test 2
+#
+if (!defined $s->load ("file" =>  "test-sched"))
+{
+    ok (0, 1, "load test-sched: " . $s->{"error"});
+}
+
+ok (1);
+
+#
+# test 3
+#
+# tue 10:44
+my $person = $s->oncall (1031064279);
+
+ok ($person, "johnd", "lookup of oncall");
+
+#
+# test 4
+#
 if (!defined $s->load ("file" =>  "test-sched-override"))
 {
-    die "failed: " . $s->{"error"} . "\n";
+    ok (0, 1, "load override " . $s->{"error"});
 }
+
+ok (1);
+
+#
+# test 5
+#
+# tue 10:44
+my $person = $s->oncall (1031064279);
+
+ok ($person, "gwb", "lookup of oncall overlay");
+
+#
+# test 6
+#
+my %info = $s->info ("gwb");
+
+ok ($info{"email"}->[0], "gwb\@x_yyz.com", "email info for gwb");
+
+__END__
 
 print $s->oncall, " is on call at this time\n";
 
@@ -31,45 +81,3 @@ foreach my $key (sort keys %info)
 }
 
 print "\n";
-
-my @a = $s->schedule;
-
-my @day_list = qw (sun mon tue wed thu fri sat);
-
-for (my $day = 0; $day < @a; $day++)
-{
-    foreach my $entry (@{$a[$day]})
-    {
-	my $hstart = $s->min_format ($entry->[0]);
-	my $hend = $s->min_format ($entry->[1]);
-
-	print "$day_list[$day] $hstart-$hend $entry->[2]\n";
-    }
-
-    print "\n";
-}
-
-exit;
-
-__END__
-for (my $day = 0; $day < @a; $day++)
-{
-    print "day $day\n";
-    print Dumper ($a[$day]), "\n";
-}
-
-die;
-
-print Dumper ($s), "\n";
-
-my $inf = $s->info ("trockij");
-
-print Dumper ($inf), "\n";
-
-my $on = $s->oncall (time);
-
-print "[$on] on call\n";
-
-my ($w, $m) = $s->rotation ("week" => 4, "month" => 4);
-
-print "week $w month $m\n";

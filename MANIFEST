@@ -1,0 +1,11 @@
+CHANGES
+COPYING
+COPYRIGHT
+MANIFEST
+MANIFEST.SKIP
+Makefile.PL
+README
+Schedule/Oncall.pm
+test-sched
+test-sched-override
+test.pl
