@@ -1,0 +1,64 @@
+# $Id: test-sched 1.4 Thu, 18 Jul 2002 10:34:53 -0400 trockij $
+
+#
+# Put people's usernames, real names, and
+# numeric pager numbers here:
+#
+begin person joeb
+    fullname joe blow
+    pager 555-1222
+    email joeblow@x_yyz.com
+end person
+
+begin person johnd
+    fullname john doe
+    pager 555-1333
+    email johnd@x_yyz.com
+end person
+
+begin person homers
+    fullname homer simpson
+    pager 555-1444
+    email homers@x_yyz.com
+    phone 555-1212
+    phone 555-2212
+end person
+
+begin person janed
+    fullname jane doe
+    pager 555-5555
+    email janed@x_yyz.com
+end person
+
+begin person gwb
+    fullname george dubbya bush
+    pager 555-6666
+    email gwb@x_yyz.com
+end person
+
+     ,    Monday,   Tuesday, Wednesday, Thursday,     Friday,  Saturday,    Sunday
+
+00:00,      joeb,     johnd,    homers,     janed,       gwb,      joeb,     johnd
+01:00,    homers,     janed,       gwb,      joeb,     johnd,    homers,     janed
+02:00,       gwb,      joeb,     johnd,    homers,     janed,       gwb,      joeb
+03:00,     johnd,    homers,     janed,       gwb,      joeb,     johnd,    homers
+04:00,     janed,       gwb,      joeb,     johnd,    homers,     janed,       gwb
+05:00,      joeb,     johnd,    homers,     janed,       gwb,      joeb,     johnd
+06:00,    homers,     janed,       gwb,      joeb,     johnd,    homers,     janed
+07:00,       gwb,      joeb,     johnd,    homers,     janed,       gwb,      joeb
+08:00,     johnd,    homers,     janed,       gwb,      joeb,     johnd,    homers
+09:00,     janed,       gwb,      joeb,     johnd,    homers,     janed,       gwb
+10:00,      joeb,     johnd,    homers,     janed,       gwb,      joeb,     johnd
+11:00,    homers,     janed,       gwb,      joeb,     johnd,    homers,     janed
+12:00,       gwb,      joeb,     johnd,    homers,     janed,       gwb,      joeb
+13:00,     johnd,    homers,     janed,       gwb,      joeb,     johnd,    homers
+14:00,     janed,       gwb,      joeb,     johnd,    homers,     janed,       gwb
+15:00,      joeb,     johnd,    homers,     janed,       gwb,      joeb,     johnd
+16:00,    homers,     janed,       gwb,      joeb,     johnd,    homers,     janed
+17:00,       gwb,      joeb,     johnd,    homers,     janed,       gwb,      joeb
+18:00,     johnd,    homers,     janed,       gwb,      joeb,     johnd,    homers
+19:00,     janed,       gwb,      joeb,     johnd,    homers,     janed,       gwb
+20:00,      joeb,     johnd,    homers,     janed,       gwb,      joeb,     johnd
+21:00,    homers,     janed,       gwb,      joeb,     johnd,    homers,     janed
+22:00,       gwb,      joeb,     johnd,    homers,     janed,       gwb,      joeb
+23:00,     johnd,    homers,     janed,       gwb,      joeb,     johnd,    homers

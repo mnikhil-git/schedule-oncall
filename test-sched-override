@@ -1,0 +1,45 @@
+# $Id: test-sched-override 1.2 Thu, 18 Jul 2002 10:34:53 -0400 trockij $
+
+#
+# Put people's usernames, real names, and
+# numeric pager numbers here:
+#
+begin person joeb
+    fullname joe blow
+    pager 555-1222
+    email joeblow@x_yyz.com
+end person
+
+begin person johnd
+    fullname john doe
+    pager 555-1333
+    email johnd@x_yyz.com
+end person
+
+begin person homers
+    fullname homer simpson
+    pager 555-1444
+    email homers@x_yyz.com
+    phone 555-1212
+    phone 555-2212
+end person
+
+begin person janed
+    fullname jane doe
+    pager 555-5555
+    email janed@x_yyz.com
+end person
+
+begin person gwb
+    fullname george dubbya bush
+    pager 555-6666
+    email gwb@x_yyz.com
+end person
+
+override = 3-jul-2002 through 5-jul-2002
+
+     ,    Monday,   Tuesday, Wednesday, Thursday,     Friday,  Saturday,    Sunday
+
+08:00,          ,       gwb,       gwb,       gwb,          ,          ,
+09:00,          ,       gwb,       gwb,       gwb,          ,          ,
+10:00,          ,       gwb,       gwb,       gwb,          ,          ,

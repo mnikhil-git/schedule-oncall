@@ -1,0 +1,18 @@
+$Id: README 1.3 Thu, 18 Jul 2002 10:30:38 -0400 trockij $
+
+To install:
+
+Install the Date::Manip module from http://www.perl.com/CPAN/
+
+perl Makefile.PL
+make
+make install
+
+See the pod pages for Schedule::Oncall
+
+There is an accompanying set of tools which use the Schedule::Oncall module
+called "schedule-tools-(version).tar.gz" to generate various oncall reports,
+send email, etc.
+
+More documentation will be added at a later, since this is only the initial
+release.

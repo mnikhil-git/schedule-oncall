@@ -1,0 +1,50 @@
+;; -*- Prcs -*-
+(Created-By-Prcs-Version 1 3 0)
+(Project-Description "Schedule::Oncall")
+(Project-Version schedule-oncall schedule-oncall-0-8-2 1)
+(Parent-Version schedule-oncall schedule-oncall-0-8-1 3)
+(Version-Log "")
+(New-Version-Log "")
+(Checkin-Time "Thu, 18 Jul 2002 10:35:32 -0400")
+(Checkin-Login trockij)
+(Populate-Ignore ())
+(Project-Keywords)
+(Files
+;; This is a comment.  Fill in files here.
+;; For example:  (prcs/checkout.cc ())
+
+;; Files added by populate at Sun, 25 Nov 2001 14:20:17 -0500,
+;; to version 0.0(w), by trockij:
+
+  (Schedule/Oncall.pm (schedule-oncall/0_Oncall.pm 1.14 644))
+  (Makefile.PL (schedule-oncall/1_Makefile.P 1.1 644))
+
+;; Files added by populate at Wed, 28 Nov 2001 06:54:44 -0500,
+;; to version 0.1(w), by trockij:
+
+  (test.pl (schedule-oncall/2_test.pl 1.5 755))
+
+;; Files added by populate at Mon, 03 Dec 2001 17:29:12 -0500,
+;; to version 0.2(w), by trockij:
+
+  (test-sched (schedule-oncall/3_test-sched 1.4 644))
+
+;; Files added by populate at Wed, 12 Dec 2001 10:20:48 -0500,
+;; to version 0.7(w), by trockij:
+
+  (README (schedule-oncall/4_README 1.3 644))
+
+;; Files added by populate at Fri, 14 Dec 2001 10:34:56 -0500,
+;; to version 0.10(w), by trockij:
+
+  (COPYRIGHT (schedule-oncall/5_COPYRIGHT 1.2 644))
+  (COPYING (schedule-oncall/6_COPYING 1.1 644))
+
+
+;; Files added by populate at Thu, 04 Jul 2002 02:55:56 -0400,
+;; to version 0.13(w), by trockij:
+
+  (test-sched-override (schedule-oncall/7_test-sched 1.2 644))
+)
+(Merge-Parents)
+(New-Merge-Parents)
